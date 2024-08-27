@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f3fc; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Header */
+#header-ctn {
+    border-bottom: 2px solid #d5c9f1; 
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.links {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: flex-start;
+}
+
+.nav_link img {
+    width: 80px;
+    transition: transform 0.3s;
+}
+
+.nav_link:hover img {
+    transform: scale(1.1);
+}
+
+/* Main */
+#main-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1900px;
+    padding: 70px;
+}
+
+#design {
+    width: 90%;
+}
+
+#img-detetive {
+    width: 50%;
+}
+#text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+/* Título e Botões */
+.container-titulo-1 {
+    margin-bottom: 20px;
+}
+
+.container-titulo-1 h1 {
+    font-size: 2.5rem;
+    color: #165327; 
+    margin-bottom: 20px;
+}
+
+.botoes-codificar-decodificar {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Containers lado a lado */
+.ctn-inputs {
+    display: flex;
+    gap:40px;
+}
+
+.container-input-texto1, .container-input-texto2 {
+    flex: 1;
+}
+
+.input-text, .input-decod {
+    background-color: #f0f0ff; 
+    border: 1px solid #d5c9f1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+textarea::placeholder {
+    color: #999;
+}
+
+/* Btn copy */
+.btn-copiar {
+    background-color: #45a066; 
+    border: none;
+    padding: 15px 30px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 1px;
+}
+
+.btn-copiar:hover {
+    background-color: #45a066;
+    transform: scale(1.05);
+}
+
+/* Estilo geral dos botões */
+.btn {
+    background-color: #45a066; 
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a066;
+    transform: scale(1.05);
+}
+
+/* Texto de instruções */
+.informacao h6 {
+    font-size: 1.1rem;
+    color: #79c792; 
+    margin-top: 20px; 
+}
+
+.informacao span {
+    color: #3da748; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-1 img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .container-inputs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn, .btn-copiar {
+        width: 100%;
+    }
+}
+
+/* Footer */
+.ft-main {
+    background-color: #1c6029;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.ft-main h3 span {
+    color: #5ddf5b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-1 img {
+        width: 100%;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn, .btn-copiar {
+        width: 100%;
+    }
+}

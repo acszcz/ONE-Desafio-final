@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header id="header-ctn">
+        <nav id="logos">
+            <ul class="links">
+                <li class="nav_link">
+                    <a class="nav_site_alura" target="_blank" href="https://alura.com.br">
+                        <img src="./assets/alura.jpg" alt="Logo Alura">
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-ctn">
+        <div id="design">
+            <img id="img-detetive" src="./assets/investigador.png" alt="Ilustração de um detetive, usando casaco, boina e chapéu">
+        </div>
+    
+        <div id="text-content">
+            <section id="text-title">
+                <h1>quer decodificar um texto? use o campo abaixo!</h1>
+            </section>
+    
+            <section id="ctn-inputs">
+                <div class="container-input-texto1">
+                    <textarea class="input-text" cols="50" rows="5" placeholder="digite o texto."></textarea>
+                    <div class="botoes-codificar-decodificar">
+                        <button class="btn" onclick="btnCodificar()">codificar</button>
+                        <button class="btn" onclick="btnDecodificar()">decodificar</button>
+                    </div>
+                </div>
+    
+                <div class="container-input-texto2">
+                    <textarea class="input-decod" placeholder="seu texto vai aparecer aqui." cols="50" rows="5"></textarea>
+                    <button class="btn-copiar" onclick="copy()">copiar</button>
+                </div>
+            </section>
+
+            <section>
+                <div class="informacao">
+                    <h6 class="informacao">importante: evite letras acentuadas e em caixa alta</h6>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="ft-main">
+        <h3>desenvolvido por 
+            <a href="https://github.com/acszcz"> <span> ana carolina szczepanski oliveira </span></a>
+            para o <span>oracle next education</span> em parceria com <span>alura.</span></h3>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
